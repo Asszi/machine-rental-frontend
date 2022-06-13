@@ -1,0 +1,71 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "react",
+    "react-hooks",
+    "jsx-a11y"
+  ],
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "fragment": "Fragment",
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/type-annotation-spacing": "error",
+    "array-bracket-spacing": ["error", "never"],
+    "array-element-newline": ["error", "consistent"],
+    "arrow-parens": ["error", "as-needed"],
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "comma-dangle": "error",
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "computed-property-spacing": ["error", "never"],
+    "eol-last": ["error", "always"],
+    "func-style": ["error", "expression"],
+    "jsx-quotes": ["error", "prefer-single"],
+    "max-statements-per-line": ["error", { "max": 1 }],
+    "no-empty-function": "off",
+    "no-empty": "warn",
+    "no-extra-parens": ["error", "all", {"ignoreJSX": "all", "nestedBinaryExpressions": false }],
+    "no-multi-spaces": "error",
+    "no-unused-vars": "warn",
+    "no-var": "error",
+    "object-curly-spacing": ["error", "always"],
+    "prefer-template": "error",
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "react/jsx-curly-brace-presence": ["error", { "props": "never", "children": "never", "propElementValues": "always" }],
+    "react/jsx-curly-spacing": ["error", { "when": "never" }],
+    "react/jsx-equals-spacing": ["error", "never"],
+    "react/jsx-fragments": "error",
+    "react/jsx-key": "warn",
+    "react/jsx-props-no-multi-spaces": "error",
+    "react/jsx-tag-spacing": ["error", { "closingSlash": "never", "beforeSelfClosing": "always", "afterOpening": "never" }],
+    "semi": ["error", "always"],
+    "space-infix-ops": ["error", { "int32Hint": false }],
+    "space-unary-ops": ["error", { "words": true, "nonwords": false }],
+    "template-curly-spacing": ["error", "never"],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
+  }
+}
