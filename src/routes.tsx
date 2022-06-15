@@ -1,15 +1,16 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import App from "./App";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import CompanyTab from './component/CompanyTab';
+import MachineTab from './component/MachineTab';
 
 const AppRoutes = () => {
-
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<App />} />
+                <Route path='/company' element={<CompanyTab />} />
+                <Route path='/machine' element={<MachineTab />} />
             </Routes>
         </BrowserRouter>
     );
-}
+};
 
 export default AppRoutes;
